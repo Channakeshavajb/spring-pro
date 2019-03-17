@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="philips" class="com.xworkz.spring.bean.Bulb">
+<constructor-arg type="int" value="16"></constructor-arg>
+<constructor-arg type="boolean" value="true"></constructor-arg>
+<property name="ofType" value="LED"></property>
+</bean>
+
+<bean id="puma" class="com.xworkz.spring.bean.Wallet">
+<property name="origin" value="india"></property>
+<property name="lifeSpan" value="5"></property>
+</bean>
+
+
+<bean id="appleGym" class="com.xworkz.spring.Gym">
+<constructor-arg value="15.00"></constructor-arg>
+<constructor-arg value="akash"></constructor-arg>
+</bean>
+
+
+</beans>
